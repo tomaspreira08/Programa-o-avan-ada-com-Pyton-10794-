@@ -33,3 +33,6 @@ def Python():
 
 if __name__ == '__main__':
     app.run(debug=True)
+else:
+    # Adicione esta linha para o Vercel
+    app = app
