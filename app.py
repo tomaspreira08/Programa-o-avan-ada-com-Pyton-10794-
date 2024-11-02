@@ -16,11 +16,11 @@ def processamento_computacional():
 
 @app.route('/c_e_c++')
 def c_e_c():
-    return render_template('c e c++.html')
+    return render_template('c_e_cplusplus.html')
 
 @app.route('/administração_de_bd')
 def administração_de_bd():
-    return render_template('admin. de base de dados.html')
+    return render_template('administracao_de_bd.html')
 
 @app.route('/JAVA')
 def JAVA():
