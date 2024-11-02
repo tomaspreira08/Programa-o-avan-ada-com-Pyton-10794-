@@ -27,11 +27,11 @@ def administração_de_bd():
 
 @app.route('/JAVA')
 def JAVA():
-    return render_template('prog com java.html')
+    return render_template('prog_com_java.html')
 
 @app.route('/Python')
 def Python():
-    return render_template('prog com py.html')
+    return render_template('prog_com_py.html')
 
 
 if __name__ == '__main__':
