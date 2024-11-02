@@ -34,5 +34,5 @@ def Python():
 if __name__ == '__main__':
     app.run(debug=True)
 else:
-    # Adicione esta linha para o Vercel
+    # Isso configura o Flask para ser detectado no Vercel
     app = app
