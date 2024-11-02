@@ -1,5 +1,8 @@
 from flask import Flask, render_template
+import logging
 
+# Configuração de logging
+logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 @app.route('/')
@@ -34,5 +37,4 @@ def Python():
 if __name__ == '__main__':
     app.run(debug=True)
 else:
-    # Isso configura o Flask para ser detectado no Vercel
-    app = app
+    app = app  # Isso garante que o Vercel encontre o aplicativo Flask
