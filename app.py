@@ -17,20 +17,20 @@ def administracao_redes_locais():
 def processamento_computacional():
     return render_template('processamento_computacional.html')
 
-@app.route('/c_e_c++')
-def c_e_c():
+@app.route('/c_e_cplusplus')
+def c_e_cplusplus():
     return render_template('c_e_cplusplus.html')
 
-@app.route('/administração_de_bd')
-def administração_de_bd():
+@app.route('/administracao_de_bd')
+def administracao_de_bd():
     return render_template('administracao_de_bd.html')
 
-@app.route('/JAVA')
-def JAVA():
+@app.route('/prog_com_java')
+def prog_com_java():
     return render_template('prog_com_java.html')
 
-@app.route('/Python')
-def Python():
+@app.route('/prog_com_py')
+def prog_com_py():
     return render_template('prog_com_py.html')
 
 
