@@ -3,12 +3,20 @@ html, body {
     height: 100%;
     margin: 5px;
     padding: 0;  
+
 }
 
 
 body {
     min-height: 100vh;
     background-image: url('../imágens/fundo.jpg');
+    display: flex;
+    flex-direction: column; /* Faz com que os elementos sejam empilhados verticalmente */
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../images/fundo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,6 +24,7 @@ body {
     overflow: hidden;
 }
 
+ 
 header{
     text-shadow: 4px 4px 4px rgba(113, 168, 241, 0.781);
     font-size: 23px;
@@ -23,6 +32,14 @@ header{
 
 nav {
     background-color:  rgba(113, 168, 241, 0);
+header {
+    text-shadow: 4px 4px 4px rgba(113, 168, 241, 0.781);
+    font-size: 23px;
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+nav {
+    background-color: rgba(113, 168, 241, 0);
     padding: 10px 0;
 }
 
@@ -35,6 +52,11 @@ nav ul {
 
 nav ul li {
    
+
+    margin: 0;   
+}
+
+nav ul li {
     margin: 0 10px;
 }
 
@@ -46,6 +68,7 @@ nav ul li a, nav a {
 nav ul li a:hover, nav a:hover {
     text-decoration: underline;
 }
+
 .container-PI{
     position: absolute;
     top: 30%;
@@ -56,10 +79,20 @@ nav ul li a:hover, nav a:hover {
     margin-right: auto;
     padding: 20px;
     background-color: rgba(152, 194, 248, 0.185); /* Fundo branco semi-transparente */
+
+
+.container-PI {
+    position: relative;
+    margin-top: 20px; /* Espaço acima do container */
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(152, 194, 248, 0.185);
     border-radius: 600px;
     box-shadow: 0 0 10px rgba(113, 169, 241, 0.685);
     text-align: center;
 }
+
 
 
 
@@ -82,11 +115,30 @@ nav ul li a:hover, nav a:hover {
 }
 .container::-webkit-scrollbar {
     display: none; /* Para Chrome, Safari e Opera */
+
+.container {
+    max-width: 700px;
+    height: 600px;
+    padding: 20px;
+    background-color: rgba(152, 194, 248, 0.185);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(113, 169, 241, 0.685);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+
 }
 
 .container-content {
     margin: 40px;
 }
+
+
+/* Estilos para scrollbar */
 
 .container::-webkit-scrollbar {
     width: 10px;
