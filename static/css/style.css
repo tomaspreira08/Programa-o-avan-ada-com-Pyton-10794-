@@ -16,6 +16,18 @@ body {
     overflow: hidden;
 }
 
+.background-PC{
+    
+        min-height: 100vh;
+        background-image: url('../images/fundo PC.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        overflow: hidden;
+    
+}
+
 header {
     text-shadow: 4px 4px 4px rgba(113, 168, 241, 0.781);
     font-size: 23px;
@@ -65,6 +77,18 @@ nav ul li a:hover, nav a:hover {
     background-color: rgba(152, 194, 248, 0.185);
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(113, 169, 241, 0.685);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container-PC {
+    max-width: 700px;
+    height: 600px;
+    padding: 20px;
+    background-color: rgba(22, 21, 21, 0.37);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(238, 234, 28, 0.616);
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;

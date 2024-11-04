@@ -15,7 +15,12 @@ def administracao_redes_locais():
 
 @app.route('/processamento_computacional')
 def processamento_computacional():
-    return render_template('processamento_computacional.html')
+    return render_template('Processamento computacional/processamento_computacional.html')
+
+@app.route('/descricao_funcionamento')
+def descricao_funcionamento():
+    return render_template('Processamento computacional/descricao_funcionamento.html')
+
 
 @app.route('/c_e_cplusplus')
 def c_e_cplusplus():
