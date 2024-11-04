@@ -1,7 +1,15 @@
+
 html, body {
     height: 100%;
     margin: 5px;
     padding: 0;  
+
+}
+
+
+body {
+    min-height: 100vh;
+    background-image: url('../imágens/fundo.jpg');
     display: flex;
     flex-direction: column; /* Faz com que os elementos sejam empilhados verticalmente */
 }
@@ -16,6 +24,14 @@ body {
     overflow: hidden;
 }
 
+ 
+header{
+    text-shadow: 4px 4px 4px rgba(113, 168, 241, 0.781);
+    font-size: 23px;
+}
+
+nav {
+    background-color:  rgba(113, 168, 241, 0);
 header {
     text-shadow: 4px 4px 4px rgba(113, 168, 241, 0.781);
     font-size: 23px;
@@ -30,6 +46,13 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+   
+
     margin: 0;   
 }
 
@@ -46,6 +69,18 @@ nav ul li a:hover, nav a:hover {
     text-decoration: underline;
 }
 
+.container-PI{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    height: 250px;
+    width: 300px;
+    margin-left: 20px; /* Espaço à esquerda */
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(152, 194, 248, 0.185); /* Fundo branco semi-transparente */
+
+
 .container-PI {
     position: relative;
     margin-top: 20px; /* Espaço acima do container */
@@ -57,6 +92,29 @@ nav ul li a:hover, nav a:hover {
     box-shadow: 0 0 10px rgba(113, 169, 241, 0.685);
     text-align: center;
 }
+
+
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px;
+    height: 600px;
+    margin-left: 20px; /* Espaço à esquerda */
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(152, 194, 248, 0.185); /* Fundo branco semi-transparente */
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(113, 169, 241, 0.685);
+    overflow-y: auto; /* Permite rolagem vertical dentro do container */
+    scrollbar-width: none;  /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+
+}
+.container::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari e Opera */
 
 .container {
     max-width: 700px;
@@ -72,13 +130,16 @@ nav ul li a:hover, nav a:hover {
 
 .container::-webkit-scrollbar {
     display: none;
+
 }
 
 .container-content {
     margin: 40px;
 }
 
+
 /* Estilos para scrollbar */
+
 .container::-webkit-scrollbar {
     width: 10px;
 }
@@ -95,3 +156,4 @@ nav ul li a:hover, nav a:hover {
 .container::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
