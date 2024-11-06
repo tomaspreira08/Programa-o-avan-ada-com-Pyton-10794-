@@ -62,8 +62,115 @@
 
         <div class="tab-content" id="content2">
             <h3>Processamento Computacional</h3>
-            <p>Este é o conteúdo de outro tópico relevante...</p>
+        
+           
+            <input type="checkbox" id="toggle1" class="toggle-checkbox">
+            <label for="toggle1" class="toggle-label">Organização do Arduino</label>
+            <div class="subtopic-content">
+                <ul>
+                    <li><strong>Funcionamento de um Arduino:</strong> O Arduino como um microcontrolador que recebe entradas, processa-as e gera saídas. Ele permite a criação de projetos interativos controlando LEDs, sensores, motores e outros dispositivos.</li>
+                    <li><strong>Etapas da execução de uma tarefa no Arduino:</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Fazer um LED piscar. Envolve etapas como conectar o LED ao pino digital, programar o código para o Arduino, compilar o código no computador e enviá-lo para a placa. O Arduino executa o código, alternando entre ligar e desligar o LED com intervalos configurados.</li>
+                    </ul>
+                    </li>
+                    <li><strong>Unidades de execução de tarefas no Arduino:</strong>
+                    <ul>
+                        <li><strong> Microcontrolador (CPU do Arduino): </strong>Executa as instruções do programa carregado na placa.</li>
+                        <li><strong> Memória: </strong>Armazena o código e dados temporários.</li>
+                        <li><strong>Dispositivos de Entrada/Saída (I/O):</strong> Pinos digitais e analógicos permitem a conexão com sensores, LEDs, motores, entre outros componentes.</li>
+                        <li>Esses componentes trabalham em conjunto para realizar operações, transformando entradas em saídas.</li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            
+            <input type="checkbox" id="toggle2" class="toggle-checkbox">
+            <label for="toggle2" class="toggle-label">Componentes do Arduino Uno
+            </label>
+            <div class="subtopic-content">
+                <ul>
+                    <li><strong> Descrição dos principais componentes:</strong>
+                    <ul>
+                        <li><strong>Microcontrolador (ATmega328P):</strong> O "cérebro" do Arduino Uno, responsável por processar os sinais recebidos.</li>
+                        <li><strong>Memória RAM:</strong> Armazena dados temporários enquanto o programa está em execução.</li>
+                        <li><strong> Memória Flash:</strong> Armazena o código do programa, mesmo quando a placa é desligada.</li>
+                        <li><strong> Pinos de Entrada e Saída:</strong> Pinos digitais e analógicos que conectam sensores, LEDs, entre outros.</li>
+                        <li><strong> Porta USB:</strong> Conecta o Arduino ao computador para programação e alimentação.</li>
+                        <li><strong>Fonte de alimentação:</strong> Fornece energia ao circuito Arduino.</li>
+                    </ul>
+                    </li>
+                    
+                    <img src="/static/images/Arduino UNO.jpg">
+                    <ul>
+                        <li><strong> Fonte de Alimentação:</strong> A placa UNO pode ser alimentada por uma porta USB (5V) ou uma fonte externa de 7V a 12V (usando plug P4 ou pino Vin).</li>
+                        <li><strong>Regulador de Tensão:</strong> Transforma tensões entre 7V e 12V da entrada externa para 5V, protegendo os componentes da placa.</li>
+                        <li><strong> Conectores de Alimentação Elétrica:</strong>
+                            <ul>
+                                <li>Pinos para fornecer energia a dispositivos externos.</li>
+                                <li>Incluem: Reset (reinicia a placa), 3,3V e 5V (saídas de tensão), GND (terra) e Vin (entrada da fonte externa).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Entradas Analógicas:</strong> Seis pinos (A0 a A5) para ler sinais analógicos, como a variação de tensão de sensores.</li>
+                        <li><strong>Conexões Digitais:</strong> 14 pinos digitais (0 a 13), usados para enviar e receber sinais digitais (0 ou 1). <br> Alguns têm funções especiais:
+                        <ul>
+                            <li>Saída PWM (pinos 3, 5, 6, 9, 10 e 11) para simular sinais analógicos</li>
+                            <li>Comunicação serial (pinos 0 e 1)</li>
+                            <li>Interrupções externas (pinos 2 e 3)</li>
+                        </ul>
+                        </li>
+                        <li><strong>Microcontrolador:</strong> O ATmega328 é o "cérebro" da placa, onde o código é armazenado e executado. Ele torna a placa capaz de operar de forma autónoma, sem necessidade constante de conexão com o computador.</li>
+                    
+                    </ul>
+                
+                
+                </ul>        
+          </div>
+        
+           
+            <input type="checkbox" id="toggle3" class="toggle-checkbox">
+            <label for="toggle3" class="toggle-label">Unidade de Memória no Arduino</label>
+            <div class="subtopic-content">
+               <ul>
+                <li><strong>Estrutura da memória:</strong>
+                    <ul>
+                        <li><strong>Memória Flash(Secundária):</strong> A memória Flash é a memória não volátil onde o código do programa é armazenado. Não volátil significa que os dados não se perdem quando o Arduino é desligado. Ela é usada para guardar o "esboço" (sketch) do programa que foi carregado na placa.No Arduino Uno, a memória Flash tem uma capacidade de 32 KB, dos quais aproximadamente 0,5 KB são reservados para o bootloader (programa que permite carregar código na placa sem necessidade de um programador externo). </li>
+                        <li><strong>SRAM(Primária):</strong> A SRAM é a memória de acesso aleatório onde o Arduino armazena dados temporários durante a execução do programa. Ela é volátil, o que significa que seu conteúdo é perdido quando o Arduino é desligado ou reiniciado.No Arduino Uno, a memória Flash tem uma capacidade de 32 KB, dos quais aproximadamente 0,5 KB são reservados para o bootloader (programa que permite carregar código na placa sem necessidade de um programador externo).</li>
+                        <li><strong> EEPROM(Secundária):</strong> A EEPROM é uma memória não volátil, usada para armazenar dados que precisam ser mantidos mesmo quando o Arduino é desligado. É ideal para dados que mudam ao longo do tempo, mas que não podem ser perdidos entre reinicializações, como configurações ou contadores de eventos.O Arduino Uno possui 1 KB de EEPROM.</li>
+                    </ul>
+                </li>
+               </ul> 
+            </div>
+
+            <input type="checkbox" id="toggle4" class="toggle-checkbox">
+            <label for="toggle4" class="toggle-label">Processador do Arduino</label>
+            <div class="subtopic-content">
+                <ul>
+                    <li><strong> Estrutura básica do microcontrolador (ATmega328P):</strong>
+                        <ul>
+                            <li><strong> Unidade Lógica e Aritmética (ALU):</strong> A ALU (Arithmetic Logic Unit) é a parte do microcontrolador que realiza operações matemáticas e lógicas. Ela é responsável por executar cálculos como adição, subtração, multiplicação e operações de lógica booleana (como AND, OR e NOT), que são fundamentais para a tomada de decisões no programa.</li>
+                            <li><strong> Unidade de Controle (CU):</strong> A Unidade de Controle coordena o fluxo de instruções no microcontrolador. Ela "lê" as instruções armazenadas na memória Flash e as decodifica, dizendo à ALU o que fazer a cada etapa. Essa unidade organiza as operações e permite que o microcontrolador siga o código do programa, etapa por etapa.</li>
+                            
+                        </ul>
+                    </li>
+                <li><strong> Exemplo Prático: Piscar um LED</strong><br>
+                     Neste exemplo, o código programado na IDE do Arduino envia instruções ao processador:
+                    <ol>
+                        <li><strong>Definir o pino:</strong> O código configura o pino onde o LED está conectado como uma saída.</li>
+                        <li><strong>Ligar o LED:</strong> O processador envia um sinal de alta tensão para o pino, acendendo o LED.</li>
+                        <li><strong>Aguardar:</strong> O processador entra em um "estado de espera" por um determinado período.</li>
+                        <li><strong>Desligar o LED:</strong> O processador envia um sinal de baixa tensão, apagando o LED.</li>
+                        <li><strong>Aguardar novamente:</strong> O processador espera o tempo especificado antes de repetir o ciclo.</li>
+                    </ol>
+                <br>
+                Esse exemplo mostra como o ATmega328P executa tarefas simples, mas essenciais, seguindo instruções de forma organizada.
+                </li>
+                </ul>
+            </div>
         </div>
+        
+        
 
         <div class="tab-content" id="content3">
             <h3>C/C++</h3>
