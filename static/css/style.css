@@ -7,7 +7,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #1E4A73;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -15,7 +15,7 @@
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #4a90e2;
 }
 
 /* Estilização das abas dos tópicos */
@@ -34,7 +34,8 @@
 
 /* Conteúdo das abas */
 .tab-content {
-    display: none;  /* Todos os conteúdos estão escondidos por padrão */
+    display: none;
+    /* Todos os conteúdos estão escondidos por padrão */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 0 5px 5px 5px;
@@ -42,17 +43,18 @@
 }
 
 /* Exibe o conteúdo da aba ativa */
-#topic1:checked ~ #content1,
-#topic2:checked ~ #content2,
-#topic3:checked ~ #content3,
-#topic4:checked ~ #content4,
-#topic5:checked ~ #content5,
-#topic6:checked ~ #content6 {
-    display: block;  /* Apenas o conteúdo correspondente ao radio button marcado será exibido */
+#topic1:checked~#content1,
+#topic2:checked~#content2,
+#topic3:checked~#content3,
+#topic4:checked~#content4,
+#topic5:checked~#content5,
+#topic6:checked~#content6 {
+    display: block;
+    /* Apenas o conteúdo correspondente ao radio button marcado será exibido */
 }
 
 /* Destaque para a aba ativa */
-.tab-container input[type="radio"]:checked + label {
+.tab-container input[type="radio"]:checked+label {
     background-color: #bbb;
     font-weight: bold;
 }
@@ -88,28 +90,406 @@
 }
 
 /* Mostrar conteúdo do subtema quando o checkbox correspondente está marcado */
-#toggle1:checked ~ .subtopic-content:nth-of-type(1),
-#toggle2:checked ~ .subtopic-content:nth-of-type(2),
-#toggle3:checked ~ .subtopic-content:nth-of-type(3), 
-#toggle4:checked ~ .subtopic-content:nth-of-type(4) {
+#toggle1:checked~.subtopic-content:nth-of-type(1),
+#toggle2:checked~.subtopic-content:nth-of-type(2),
+#toggle3:checked~.subtopic-content:nth-of-type(3),
+#toggle4:checked~.subtopic-content:nth-of-type(4) {
     display: block;
 }
 
+
+
+
+/* Contêiner principal para centralizar na tela */
+.container-principal {
+    display: flex;
+    justify-content: flex-end;
+    /* Move o contêiner para a direita */
+    margin: 0 auto;
+    /* Centraliza o contêiner principal na página */
+    max-width: 1200px;
+    /* Largura máxima da área de conteúdo */
+}
+
+/* Estilo do conteúdo dentro do contêiner */
+.container {
+    max-width: 600px;
+    /* Largura do contêiner interno */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+
+
+
+/* Estilos adicionais */
+h1,
+h2 {
+    color: #ffffff;
+}
+
+p,
+ul,
+li {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #ffffff;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+
+/* Contêiner principal para centralizar o conteúdo */
+
+
+
+/* Contêiner principal para centralizar o conteúdo */
+.container-principal {
+    display: flex;
+    justify-content: center;  /* Centraliza o contêiner */
+    margin: 0 auto;  /* Centraliza o contêiner principal na página */
+    max-width: 200%;  /* O contêiner ocupa toda a largura disponível */
+    padding: 0;  /* Remove o padding extra do contêiner principal */
+    background-color: #0000002c;
+}
+
+/* Estilo do conteúdo dentro do contêiner */
+.container {
+    width: 100%;  /* O contêiner ocupa 100% da largura do seu contêiner pai */
+    max-width: 700px;  /* Define uma largura máxima mais estreita */
+    padding: 50px;  /* Padding reduzido para deixar o contêiner mais justo ao texto */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;  /* Alinha o texto à esquerda */
+
+    max-height: 600px;  /* Limita a altura do contêiner */
+    overflow-y: auto;  /* Permite o scroll vertical se o conteúdo ultrapassar a altura */
+}
+
+/* Estilos gerais para os títulos */
+h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;  /* Ajusta a margem inferior para os títulos */
+}
+
+/* Títulos h2 com margens ajustadas */
+h2 {
+    margin-top: 1rem;  /* Define um espaçamento pequeno acima */
+    margin-bottom: 0.8rem;  /* Define um espaçamento pequeno abaixo */
+    
+}
+
+.PComputacional li{
+    color: black
+}
+/* Estilos para o texto */
+p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para a lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para o código */
+code {
+    background-color: #e8e8e8;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.content {
+    background-color: rgba(196, 177, 177, 0.651);
+    border: 5px solid transparent;
+    /* A borda começa invisível */
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: glow 1.5s infinite alternate;
+    /* Aplica a animação */
+}
+
+@keyframes glow {
+    0% {
+        border-color: #1E4A73;
+        /* Azul bem mais escuro */
+        box-shadow: 0 0 20px #1E4A73, 0 0 30px #1E4A73, 0 0 40px #1E4A73;
+    }
+
+    100% {
+        border-color: #1E4A73;
+        /* Azul bem mais escuro */
+        box-shadow: 0 0 20px #1E4A73, 0 0 30px #1E4A73, 0 0 40px #1E4A73;
+    }
+}
+
+.right-align {
+    border-color: #1E4A73;
+    /* Azul bem mais escuro */
+    box-shadow: none;
+    /* Remove o brilho */
+}
+
+
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 30, 1) 38%, rgba(0, 0, 60, 1) 68%, rgba(0, 0, 80, 1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 50, 0.8));
+    /* Fundo preto e azul escuro */
+    border-radius: 1000% 0 1000% 0;
+    /* Arredondar os 4 cantos */
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Girar o fundo ao longo do tempo */
+    }
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 40, 0.8));
+    /* Fundo escuro com azul mais profundo */
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 60, 0.7));
+    /* Fundo escuro com mais azul */
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    /* Full screen */
+}
+
+/* Cabeçalho fixo à esquerda */
+header {
+    position: fixed;
+    /* Fica fixo */
+    top: 0;
+    left: 0;
+    width: 200px;
+    /* Largura do menu */
+    height: 100%;
+    /* Ocupa toda a altura da tela */
+    background-color: #1E4A73;
+    /* Cor de fundo do menu */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Estilo do título */
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Lista de links no menu */
+.menu-list {
+    list-style: none;
+    /* Remove o marcador */
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens de lista */
+.menu-list li {
+    margin-bottom: 15px;
+    /* Espaço entre os links */
+}
+
+/* Estilo dos links */
+.menu-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    background-color: #1E4A73;
+    /* Cor de fundo dos links */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+.menu-list a:hover {
+    background-color: #007bff;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Espaço para o conteúdo principal */
+main {
+    margin-left: 220px;
+    /* Dá espaço para o menu */
+    padding: 20px;
+    flex: 1;/
+}
+
+.seguranca-content {
+color:white
+}
+
 .alert {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
     border-radius: 4px;
 }
 
 .alert-success {
-    background-color: #d4edda;
     color: #155724;
-    border: 1px solid #c3e6cb;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
 }
 
 .alert-error {
-    background-color: #f8d7da;
     color: #721c24;
-    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
 }
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, redirect, url_for  # Importar flash, redirect e url_for
+from flask import Flask, render_template, flash, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
@@ -29,10 +29,11 @@ def seguranca():
     if form.validate_on_submit():  # Verifica se o formulário foi submetido e validado
         nome = form.nome.data
         flash(f"Formulário enviado com sucesso por {nome}!", "success")
-        return render_template('seguranca.html', form=form)
+        # Não redirecionamos, apenas renderizamos novamente a página com a mensagem de sucesso
     elif form.is_submitted() and not form.validate():  # Se o formulário foi submetido mas não validado
         flash("Erro: Formulário não validado. Verifique os campos e tente novamente.", "error")
 
+    # Renderizamos a página com o modal e as mensagens flash (se houver)
     return render_template('seguranca.html', form=form)
 
 if __name__ == '__main__':
